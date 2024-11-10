@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщения | SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">SkillSwap</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="messages.html">Сообщения</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="messages">
+        <h2>Мои сообщения</h2>
+
+        <div id="messages-list">
+            <!-- Список сообщений -->
+            <div class="message">
+                <p><strong>От: Ирина</strong></p>
+                <p>Привет! Я заинтересована в уроках вокала. Когда можем начать?</p>
+                <button class="reply-btn">Ответить</button>
+            </div>
+            <div class="message">
+                <p><strong>От: Александр</strong></p>
+                <p>Здравствуйте! Я готов научить вас готовить. Давайте договоримся о времени.</p>
+                <button class="reply-btn">Ответить</button>
+            </div>
+        </div>
+
+        <div id="new-message">
+            <h3>Написать сообщение</h3>
+            <textarea id="message-input" placeholder="Напишите ваше сообщение..."></textarea>
+            <button id="send-message">Отправить</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 SkillSwap</p>
+    </div>
+</footer>
+
+<script src="messages.js"></script>
+</body>
+</html>

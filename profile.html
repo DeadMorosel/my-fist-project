@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль | SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">SkillSwap</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="messages.html">Сообщения</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="profile">
+        <h2>Ваш профиль</h2>
+
+        <!-- Раздел для фото профиля -->
+        <div class="profile-photo">
+            <img id="profile-photo" src="default-profile.png" alt="Фото профиля" width="150" height="150">
+            <input type="file" id="upload-photo" accept="image/*">
+        </div>
+
+        <div class="profile-info">
+            <p><strong>Имя:</strong> <span id="profile-name">Иван Иванов</span></p>
+            <p><strong>Email:</strong> <span id="profile-email">ivan@example.com</span></p>
+            <p><strong>Город:</strong> <span id="profile-city">Москва</span></p>
+        </div>
+        <button id="edit-profile-btn">Редактировать профиль</button>
+
+        <h3>Ваши услуги</h3>
+        <div class="profile-services">
+            <ul id="service-list">
+                <!-- Услуги будут добавляться динамически через JavaScript -->
+            </ul>
+            <button id="add-service-btn">Добавить услугу</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 SkillSwap</p>
+    </div>
+</footer>
+
+<script src="profile.js"></script>
+</body>
+</html>
